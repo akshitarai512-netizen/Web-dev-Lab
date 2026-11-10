@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Feature-Branch Git Workflow</title>
+</head>
+<body>
+
+    <h1>Feature-Branch Git Workflow Guide</h1>
+    
+    <h2>1. Repository Setup</h2>
+    <ol>
+        <li>
+            <strong>Navigate to folder:</strong> Open the terminal and change directories to the target folder.
+            <br><code>cd "P03 Feature-branch Git workflow"</code>
+        </li>
+        <li>
+            <strong>Initialize Git:</strong> Create a new Git repository and set the main branch name.
+            <br><code>git init</code>
+            <br><code>git branch -M main</code>
+        </li>
+        <li>
+            <strong>Check Status:</strong> Verify untracked files and working tree state.
+            <br><code>git status</code>
+        </li>
+        <li>
+            <strong>Stage Files:</strong> Track all project files.
+            <br><code>git add .</code>
+        </li>
+        <li>
+            <strong>Initial Commit:</strong> Save the initial baseline state of the project.
+            <br><code>git commit -m "Initial commit"</code>
+        </li>
+    </ol>
+
+    <h2>2. Feature Development</h2>
+    <ol>
+        <li>
+            <strong>Create Branch:</strong> Make a new branch named <code>feature</code>.
+            <br><code>git branch feature</code>
+        </li>
+        <li>
+            <strong>Switch Branch:</strong> Move from <code>main</code> into the <code>feature</code> branch.
+            <br><code>git switch feature</code>
+        </li>
+        <li>
+            <strong>Make Changes:</strong> Modify project files on the feature branch.
+            <br><code>echo "&lt;p&gt;Feature branch update&lt;/p&gt;" &gt;&gt; index.html</code>
+        </li>
+        <li>
+            <strong>Commit Changes:</strong> Stage and save the feature update.
+            <br><code>git add index.html</code>
+            <br><code>git commit -m "Update index.html on feature branch"</code>
+        </li>
+    </ol>
+
+    <h2>3. Merging Changes</h2>
+    <ol>
+        <li>
+            <strong>Return to Main:</strong> Switch back to the <code>main</code> branch before merging.
+            <br><code>git switch main</code>
+        </li>
+        <li>
+            <strong>Merge Branch:</strong> Combine changes from <code>feature</code> into <code>main</code>.
+            <br><code>git merge feature</code>
+        </li>
+        <li>
+            <strong>Verify Status:</strong> Confirm that the merge completed and the working tree is clean.
+            <br><code>git status</code>
+        </li>
+    </ol>
+
+</body>
+</html>
