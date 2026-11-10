@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Feature-Branch Git Workflow</title>
+</head>
+<body>
+
+    <h1>Feature-Branch Git Workflow Guide</h1>
+    <p>Step-by-step workflow for initializing, branching, updating, and merging in Git.</p>
+
+
+    <h2>1. Setup & Initial Commit</h2>
+    <ol>
+        <li><code>cd "P03 Feature-branch Git workflow"</code> - Change directory</li>
+        <li><code>git init</code> - Initialize Git repository</li>
+        <li><code>git branch -M main</code> - Rename default branch to main</li>
+        <li><code>git status</code> - Check repository status</li>
+        <li><code>git add .</code> - Stage all files</li>
+        <li><code>git commit -m "Initial commit"</code> - Create initial commit</li>
+    </ol>
+    <h2>2. Feature Branching</h2>
+    <ol>
+        <li><code>git branch feature</code> - Create a feature branch</li>
+        <li><code>git switch feature</code> - Switch to feature branch</li>
+        <li><code>echo "&lt;p&gt;Feature branch update&lt;/p&gt;" &gt;&gt; index.html</code> - Modify index.html</li>
+        <li><code>git add index.html</code> - Stage updated file</li>
+        <li><code>git commit -m "Update index.html on feature branch"</code> - Commit changes</li>
+    </ol>
+
+    <h2>3. Merging</h2>
+    <ol>
+        <li><code>git switch main</code> - Switch back to main branch</li>
+        <li><code>git merge feature</code> - Merge feature branch into main</li>
+        <li><code>git status</code> - Verify clean working tree</li>
+    </ol>
+
+</body>
+</html>
