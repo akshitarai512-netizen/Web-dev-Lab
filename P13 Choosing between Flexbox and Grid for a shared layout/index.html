@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Flexbox and Grid Together</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="page">
+
+   
+    <header class="navbar">
+      <div class="logo">LayoutLab</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Guide</a></li>
+          <li><a href="#">Examples</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+   
+    <aside class="sidebar">
+      <h2>Quick Rule</h2>
+      <ul>
+        <li><strong>Flexbox:</strong> one direction (row or column)</li>
+        <li><strong>Grid:</strong> rows and columns together</li>
+        <li><strong>Best:</strong> use both in one page</li>
+      </ul>
+    </aside>
+
+    <main class="main">
+
+      <section class="intro">
+        <h1>Which one should I use?</h1>
+        <p>Use Flexbox to align items along a single line. Use Grid to place items
+           in rows and columns. A real layout usually needs both.</p>
+      </section>
+
+    
+      <section class="cards">
+
+       
+        <article class="card">
+          <span class="badge flex">Flexbox</span>
+          <h3>Navigation Bar</h3>
+          <p>Links sit in a single row and need equal spacing and vertical centring.</p>
+          <a href="#" class="btn">See example</a>
+        </article>
+
+        <article class="card">
+          <span class="badge grid">Grid</span>
+          <h3>Page Layout</h3>
+          <p>Header, sidebar, content and footer need rows and columns together.</p>
+          <a href="#" class="btn">See example</a>
+        </article>
+
+        <article class="card">
+          <span class="badge flex">Flexbox</span>
+          <h3>Button Group</h3>
+          <p>A short row of buttons that should wrap and stay evenly spaced.</p>
+          <a href="#" class="btn">See example</a>
+        </article>
+
+        <article class="card">
+          <span class="badge grid">Grid</span>
+          <h3>Photo Gallery</h3>
+          <p>Equal tiles arranged in columns that adapt to the screen width.</p>
+          <a href="#" class="btn">See example</a>
+        </article>
+
+      </section>
+
+      
+      <section class="compare">
+        <h2>Flexbox vs Grid</h2>
+        <table>
+          <thead>
+            <tr><th>Feature</th><th>Flexbox</th><th>Grid</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Dimension</td><td>One-dimensional</td><td>Two-dimensional</td></tr>
+            <tr><td>Driven by</td><td>Content</td><td>Layout</td></tr>
+            <tr><td>Best for</td><td>Navbars, toolbars, card insides</td><td>Page layouts, galleries, dashboards</td></tr>
+            <tr><td>Key properties</td><td>flex-direction, justify-content, align-items</td><td>grid-template-columns, grid-template-areas, gap</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+
+   
+    <footer class="footer">
+      <p>&copy; 2026 LayoutLab</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </footer>
+
+  </div>
+
+</body>
+</html>
