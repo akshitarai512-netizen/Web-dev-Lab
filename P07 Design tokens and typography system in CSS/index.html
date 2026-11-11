@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>P7 - Design Tokens and Typography System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Design Tokens &amp; Typography System</h1>
+        <p class="lead">A small CSS system built with custom properties (variables) for colour, type, spacing and more.</p>
+    </header>
+
+    <main class="container">
+
+        
+        <section>
+            <h2>1. Colour Tokens</h2>
+            <p>Colours are defined once in <code>:root</code> and reused everywhere with <code>var(--token-name)</code>.</p>
+            <ul class="swatches">
+                <li class="swatch swatch-primary">--color-primary</li>
+                <li class="swatch swatch-secondary">--color-secondary</li>
+                <li class="swatch swatch-accent">--color-accent</li>
+                <li class="swatch swatch-success">--color-success</li>
+                <li class="swatch swatch-danger">--color-danger</li>
+                <li class="swatch swatch-text">--color-text</li>
+                <li class="swatch swatch-muted">--color-text-muted</li>
+                <li class="swatch swatch-surface">--color-surface</li>
+            </ul>
+        </section>
+
+       
+        <section>
+            <h2>2. Type Scale</h2>
+            <p>Font sizes follow a consistent scale, so headings and text stay in proportion.</p>
+            <h1>Heading 1 - The quick brown fox</h1>
+            <h2>Heading 2 - The quick brown fox</h2>
+            <h3>Heading 3 - The quick brown fox</h3>
+            <h4>Heading 4 - The quick brown fox</h4>
+            <h5>Heading 5 - The quick brown fox</h5>
+            <h6>Heading 6 - The quick brown fox</h6>
+        </section>
+      
+        <section>
+            <h2>3. Body Text &amp; Inline Styles</h2>
+            <p>
+                This is a normal paragraph. It uses the base font size and line height tokens so that long
+                text stays easy to read. You can make text <strong>bold</strong>, <em>italic</em>,
+                or mark it with <mark>highlighting</mark>. Inline code looks like <code>var(--space-md)</code>.
+            </p>
+            <p class="small">This is small text, used for notes and captions.</p>
+            <blockquote>
+                "Design tokens are the single source of truth for a design system."
+                <cite>- Design Systems Principle</cite>
+            </blockquote>
+        </section>
+
+      
+        <section>
+            <h2>4. Lists</h2>
+            <div class="grid-two">
+                <div>
+                    <h3>Unordered List</h3>
+                    <ul>
+                        <li>Colour tokens</li>
+                        <li>Typography tokens</li>
+                        <li>Spacing tokens</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Ordered List</h3>
+                    <ol>
+                        <li>Define tokens in <code>:root</code></li>
+                        <li>Use them with <code>var()</code></li>
+                        <li>Change once, update everywhere</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        
+        <section>
+            <h2>5. Spacing Tokens</h2>
+            <p>Spacing uses a fixed scale instead of random pixel values.</p>
+            <div class="spacing-demo">
+                <div class="space-bar space-xs">--space-xs</div>
+                <div class="space-bar space-sm">--space-sm</div>
+                <div class="space-bar space-md">--space-md</div>
+                <div class="space-bar space-lg">--space-lg</div>
+                <div class="space-bar space-xl">--space-xl</div>
+            </div>
+        </section>
+
+       
+        <section>
+            <h2>6. Components Built with Tokens</h2>
+            <div class="grid-two">
+                <article class="card">
+                    <h3>Card Title</h3>
+                    <p>This card uses the surface colour, radius, shadow and spacing tokens.</p>
+                    <a href="#" class="btn">Primary Button</a>
+                    <a href="#" class="btn btn-outline">Outline Button</a>
+                </article>
+                <article class="card card-accent">
+                    <h3>Accent Card</h3>
+                    <p>Changing a token in <code>:root</code> updates every component that uses it.</p>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-danger">Danger</span>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>P7 - Design tokens and typography system in CSS</p>
+    </footer>
+
+</body>
+</html>
