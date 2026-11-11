@@ -1,0 +1,158 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f1ede4;
+  color: #222;
+  line-height: 1.6;
+}
+
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   
+  gap: 24px;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 24px;
+  background: #fffdf7;
+  border: 1px solid #c9c3b3;
+}
+
+
+.masthead {
+  grid-column: 1 / -1;                   
+  grid-row: 1;
+  text-align: center;
+  border-top: 4px double #222;
+  border-bottom: 4px double #222;
+  padding: 12px 0;
+}
+
+.masthead h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.dateline {
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+.lead {
+  grid-column: 1 / 3;                     
+  grid-row: 2;
+  padding-right: 20px;
+  border-right: 1px solid #c9c3b3;
+}
+
+.lead h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.byline {
+  font-size: 13px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.lead p {
+  margin-bottom: 10px;
+}
+
+
+.sidebar {
+  grid-column: 3;
+  grid-row: 2 / 5;                       
+  background: #f1ede4;
+  padding: 16px;
+  border: 1px solid #c9c3b3;
+}
+
+.sidebar h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  border-bottom: 2px solid #222;
+  margin-bottom: 8px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.sidebar li {
+  padding: 6px 0;
+  border-bottom: 1px dotted #999;
+  font-size: 15px;
+}
+
+
+  padding-bottom: 12px;
+  border-bottom: 1px solid #c9c3b3;
+}
+
+.story h2 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.story p {
+  font-size: 15px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 900px) {
+  .newspaper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .masthead h1 {
+    font-size: 36px;
+  }
+
+  .lead {
+    grid-column: 1 / -1;                   
+    grid-row: auto;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .sidebar {
+    grid-column: 1 / -1;                  
+    grid-row: auto;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .newspaper {
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+
+  .masthead h1 {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  .lead h2 {
+    font-size: 24px;
+  }
+}
